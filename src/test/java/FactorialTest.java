@@ -12,12 +12,12 @@ public class FactorialTest {
     @Test
     public void testFactorialCalculate() {
         Factorial factorial = new MultiThreadFactorial();
-        BigInteger result = factorial.calculate(5);
+        BigInteger result = factorial.calculate(0);
 
+        assertEquals(BigInteger.ONE, result);
+
+        result = factorial.calculate(5);
         assertEquals(BigInteger.valueOf(120), result);
-
-        result = factorial.calculate(0);
-        assertEquals(BigInteger.valueOf(1), result);
     }
 
 
