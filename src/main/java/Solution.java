@@ -17,7 +17,7 @@ public class Solution {
         if (isDigit) {
             int value = Integer.parseInt(stringValue);
             System.out.print(new MultiThreadFactorial().calculate(value));
-        } else System.out.println("Wrong input. The input value is not numeric.");
+        } else System.err.println("Wrong input. The input value is not numeric.");
 
 
     }
