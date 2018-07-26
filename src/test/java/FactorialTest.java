@@ -22,7 +22,7 @@ public class FactorialTest {
 
 
     @Test(expected = IllegalArgumentException.class)
-    public void whenExceptionThrown_thenExpectationSatisfied() {
+    public void whenExceptionThrownThenExpectationSatisfied() {
         Factorial factorial = new MultiThreadFactorial();
         BigInteger result = factorial.calculate(-5);
 
